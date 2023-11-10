@@ -13,7 +13,7 @@ def prefixEvaluation(infixExpr):  # Postfix should have spaces as separators
 
         if token.isdigit() or token.replace(".", "").isdigit():
             opStack.push(float(token))
-
+        #test
         elif token == "~":
             operand1 = opStack.pop()
             result = domath(token, operand1)
