@@ -29,7 +29,7 @@ def infix_to_prefix_helper(astring):
         raise SyntaxError("Brackets are not typed correctly")
 
         # Separating Oprators and Operands
-    stringlist = filter(astring)
+    stringlist = filter(astring) 
 
     return stringlist[::-1]
 
