@@ -11,7 +11,7 @@ def prefixEvaluation(infixExpr):  # Postfix should have spaces as separators
         if token.isalpha():
             token = str(input(f"Insert the value of {token}: "))
 
-        if token.isdigit() or token.replace("-", "").replace(".", "").isdigit():
+        if token.isdigit() or token.replace(".", "").isdigit():
             opStack.push(float(token))
 
         elif token == "~":
