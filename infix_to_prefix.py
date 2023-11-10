@@ -21,7 +21,7 @@ def infix_to_prefix(astring):
     opstack = stack()
 
     for token in tokenlist:
-        if token.isalpha() or token.replace("-", "").replace(".", "").isdigit():
+        if token.isalpha() or token.replace(".", "").isdigit():
             prefixlist.append(token)
 
         elif token in ")}]":
