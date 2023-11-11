@@ -37,7 +37,7 @@ def prefixEvaluation(infixExpr):  # Postfix should have spaces as separators
 
 if __name__ == "__main__":
 
-    infix = "[4&0]*-2"
+    infix = "2  ^ 3 * (  5 -2  )/(- 4 ) + 9"
     print(prefixEvaluation(infix))
 
 # Two - char number (Sanad, works but spaces are broken)
